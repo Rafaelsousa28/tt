@@ -4,8 +4,8 @@
     <section class="relative min-h-screen flex items-center overflow-hidden">
       <!-- Background -->
       <div class="absolute inset-0 bg-gradient-to-br from-[#1B4332] via-[#2D6A4F] to-[#52B788]">
-        <div class="absolute inset-0 opacity-20"
-          style="background-image: url('data:image/svg+xml,<svg width=\"60\" height=\"60\" viewBox=\"0 0 60 60\" xmlns=\"http://www.w3.org/2000/svg\"><g fill=\"none\" fill-rule=\"evenodd\"><g fill=\"%23ffffff\" fill-opacity=\"0.3\"><path d=\"M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\"/></g></g></svg>')">
+        <div class="absolute inset-0 opacity-10"
+          :style="bgPattern">
         </div>
       </div>
 
@@ -224,6 +224,8 @@ const banners        = ref({ heroes: [], promos: [] })
 const loadingFeatured = ref(true)
 const currentSlide   = ref(0)
 const email          = ref('')
+
+const bgPattern = 'background-image: repeating-linear-gradient(45deg, rgba(255,255,255,0.05) 0px, rgba(255,255,255,0.05) 1px, transparent 1px, transparent 10px)'
 
 const stats = [
   { value: '500+', label: 'Espécies disponíveis' },
