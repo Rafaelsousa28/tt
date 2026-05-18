@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+@layer base {
+  :root {
+    --color-leaf: #2D6A4F;
+    --color-leaf-light: #52B788;
+    --color-leaf-pale: #D8F3DC;
+    --color-soil: #6B4226;
+    --color-cream: #F8F4F0;
+    --color-charcoal: #1B1B1B;
+  }
+
+  * { @apply antialiased; }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    @apply text-gray-800 bg-white;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: 'Playfair Display', serif;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-[#2D6A4F] text-white px-6 py-3 rounded-full font-medium text-sm tracking-wide
+           hover:bg-[#1B4332] transition-all duration-300 inline-flex items-center gap-2
+           focus:outline-none focus:ring-2 focus:ring-[#52B788] focus:ring-offset-2;
+  }
+
+  .btn-secondary {
+    @apply border border-[#2D6A4F] text-[#2D6A4F] px-6 py-3 rounded-full font-medium text-sm
+           tracking-wide hover:bg-[#2D6A4F] hover:text-white transition-all duration-300
+           inline-flex items-center gap-2;
+  }
+
+  .btn-ghost {
+    @apply text-gray-600 px-4 py-2 rounded-full font-medium text-sm hover:bg-gray-100
+           transition-all duration-200 inline-flex items-center gap-2;
+  }
+
+  .card {
+    @apply bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300;
+  }
+
+  .badge {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
+  }
+
+  .badge-sale {
+    @apply badge bg-red-100 text-red-700;
+  }
+
+  .badge-new {
+    @apply badge bg-emerald-100 text-emerald-700;
+  }
+
+  .badge-low-stock {
+    @apply badge bg-amber-100 text-amber-700;
+  }
+
+  .input-field {
+    @apply w-full px-4 py-3 rounded-xl border border-gray-200 bg-gray-50
+           focus:outline-none focus:ring-2 focus:ring-[#52B788] focus:border-transparent
+           placeholder-gray-400 text-gray-800 transition-all duration-200;
+  }
+
+  .section-title {
+    @apply text-3xl md:text-4xl font-semibold text-[#1B1B1B] leading-tight;
+  }
+
+  .section-subtitle {
+    @apply text-gray-500 text-base mt-2;
+  }
+}
+
+@layer utilities {
+  .text-leaf { color: var(--color-leaf); }
+  .bg-leaf { background-color: var(--color-leaf); }
+  .bg-leaf-pale { background-color: var(--color-leaf-pale); }
+  .text-leaf-light { color: var(--color-leaf-light); }
+
+  .scrollbar-thin {
+    scrollbar-width: thin;
+    scrollbar-color: #D1FAE5 transparent;
+  }
+}
