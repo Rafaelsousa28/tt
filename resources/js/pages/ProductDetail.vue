@@ -108,10 +108,6 @@
               <span class="ml-2 text-xs bg-[#D8F3DC] text-[#2D6A4F] font-bold px-2 py-0.5 rounded-full">7% OFF</span>
             </p>
 
-            <!-- Parcelamento -->
-            <p class="text-sm text-gray-600">
-              ou <span class="font-semibold text-[#1B1B1B]">3x de {{ formatPrice(installmentPrice) }}</span> sem juros no cartão
-            </p>
           </div>
 
           <!-- Estoque -->
@@ -293,12 +289,7 @@
               <span class="text-2xl">💳</span>
               <div>
                 <p class="font-semibold text-[#1B1B1B]">Cartão de Crédito</p>
-                <div class="text-sm text-gray-500 space-y-0.5">
-                  <p>1x de {{ formatPrice(currentPrice) }} sem juros</p>
-                  <p>2x de {{ formatPrice(currentPrice / 2) }} sem juros</p>
-                  <p class="font-semibold text-[#1B1B1B]">3x de {{ formatPrice(installmentPrice) }} sem juros</p>
-                  <p>até 12x com juros</p>
-                </div>
+                <p class="text-sm text-gray-500">Pagamento processado com segurança pelo Mercado Pago.</p>
               </div>
             </div>
           </div>
@@ -381,7 +372,6 @@ const currentPrice = computed(() =>
 
 const pixPrice = computed(() => currentPrice.value * 0.93)
 
-const installmentPrice = computed(() => currentPrice.value / 3)
 
 const discountPercent = computed(() => {
   if (!product.value?.is_on_sale) return 0
