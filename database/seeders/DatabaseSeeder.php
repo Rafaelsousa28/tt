@@ -16,7 +16,7 @@ class DatabaseSeeder extends Seeder
 
         // Create default admin user
         \App\Models\User::firstOrCreate(
-            ['email' => 'admin@verdevivo.com.br'],
+            ['email' => 'admin@puregarden.com.br'],
             [
                 'name'     => 'Administrador',
                 'password' => bcrypt('admin@123'),

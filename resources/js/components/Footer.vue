@@ -4,16 +4,24 @@
       <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
         <!-- Brand -->
         <div class="md:col-span-1">
-          <div class="flex items-center gap-2 mb-4">
-            <div class="w-8 h-8 bg-[#52B788] rounded-full flex items-center justify-center">
-              <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12 2C9.5 2 7 4 7 7c0 2.5 1.5 4.5 3.5 5.5L10 22h4l-.5-9.5C15.5 11.5 17 9.5 17 7c0-3-2.5-5-5-5z"/>
-              </svg>
+          <!-- Logo Pure Garden no footer -->
+          <div class="flex items-center gap-3 mb-5">
+            <svg class="h-10 w-auto text-[#52B788]" viewBox="0 0 44 52" fill="currentColor">
+              <path d="M10 30 L13 48 H31 L34 30 Z" opacity="0.9"/>
+              <rect x="20.5" y="12" width="3" height="20" rx="1.5"/>
+              <path d="M21 22 C18 18 12 18 12 14 C16 14 20 17 21 22Z" opacity="0.85"/>
+              <path d="M23 18 C26 14 32 13 32 9 C28 10 23 13 23 18Z" opacity="0.85"/>
+              <path d="M22 12 C21 9 19 7 20 4 C22 6 23 9 22 12Z"/>
+            </svg>
+            <div class="leading-none">
+              <div class="font-black uppercase tracking-widest text-lg text-white" style="letter-spacing: 0.12em;">
+                PURE <span class="text-[#52B788]">GARDEN</span>
+              </div>
+              <div class="text-[9px] tracking-[0.25em] uppercase text-[#A7F3D0]/70 font-medium mt-0.5">Jardins e Decorações</div>
             </div>
-            <span class="font-semibold text-xl" style="font-family: 'Playfair Display', serif">Verde Vivo</span>
           </div>
-          <p class="text-[#A7F3D0] text-sm leading-relaxed">
-            Trazendo natureza para o seu lar com mudas e plantas selecionadas com carinho.
+          <p class="text-[#A7F3D0]/80 text-sm leading-relaxed">
+            Jardins, mudas e decorações selecionadas com carinho para transformar seu espaço.
           </p>
           <div class="flex gap-4 mt-6">
             <a href="#" class="w-9 h-9 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors">
@@ -53,7 +61,7 @@
             </li>
             <li class="flex items-start gap-2">
               <svg class="w-4 h-4 mt-0.5 flex-shrink-0 text-[#52B788]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-              contato@verdevivo.com.br
+              contato@puregarden.com.br
             </li>
             <li class="flex items-start gap-2">
               <svg class="w-4 h-4 mt-0.5 flex-shrink-0 text-[#52B788]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
@@ -66,7 +74,7 @@
 
     <div class="border-t border-white/10">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
-        <p class="text-[#A7F3D0]/60 text-xs">© {{ new Date().getFullYear() }} Verde Vivo. Todos os direitos reservados.</p>
+        <p class="text-[#A7F3D0]/60 text-xs">© {{ new Date().getFullYear() }} Pure Garden. Todos os direitos reservados.</p>
         <div class="flex items-center gap-4">
           <img src="https://logospng.org/download/mercado-pago/logo-mercado-pago-icone-1024.png" alt="Mercado Pago" class="h-6 opacity-60" />
           <span class="text-[#A7F3D0]/40 text-xs">Pagamento seguro</span>

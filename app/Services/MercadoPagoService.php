@@ -41,7 +41,7 @@ class MercadoPagoService
             'auto_return'           => 'approved',
             'notification_url'      => config('app.url') . '/api/payments/webhook',
             'external_reference'    => $order->order_number,
-            'statement_descriptor'  => config('app.name'),
+            'statement_descriptor'  => 'PURE GARDEN',
             'metadata'              => ['order_number' => $order->order_number],
         ];
 

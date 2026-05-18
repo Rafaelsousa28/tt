@@ -1,4 +1,4 @@
-# Verde Vivo — Plataforma E-commerce de Mudas & Plantas
+# Pure Garden — Plataforma E-commerce | Jardins e Decorações
 
 ## Pré-requisitos
 - PHP 8.1+
@@ -23,7 +23,7 @@ cp .env.example .env
 php artisan key:generate
 
 # 5. Configurar .env
-# DB_DATABASE=verde_vivo
+# DB_DATABASE=pure_garden
 # DB_USERNAME=root
 # DB_PASSWORD=sua_senha
 # MP_ACCESS_TOKEN=TEST-xxxxxxxx   ← Mercado Pago Sandbox
@@ -51,7 +51,7 @@ php artisan serve
 | http://localhost/admin | Painel Admin (Filament) |
 
 ### Login Admin padrão
-- **E-mail:** admin@verdevivo.com.br
+- **E-mail:** admin@puregarden.com.br
 - **Senha:** admin@123
 
 ## Mercado Pago

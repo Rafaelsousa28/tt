@@ -5,18 +5,40 @@
   >
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <nav class="flex items-center justify-between h-16 md:h-20">
-        <!-- Logo -->
-        <RouterLink to="/" class="flex items-center gap-2 group">
-          <div class="w-8 h-8 bg-[#2D6A4F] rounded-full flex items-center justify-center">
-            <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M12 2C9.5 2 7 4 7 7c0 2.5 1.5 4.5 3.5 5.5L10 22h4l-.5-9.5C15.5 11.5 17 9.5 17 7c0-3-2.5-5-5-5z"/>
-            </svg>
+        <!-- Logo Pure Garden -->
+        <RouterLink to="/" class="group flex items-center gap-3">
+          <!-- Ícone: vaso com muda, fiel à logo oficial -->
+          <svg
+            class="h-9 w-auto transition-colors duration-300"
+            :class="scrolled ? 'text-[#2D5016]' : 'text-white'"
+            viewBox="0 0 44 52" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+          >
+            <!-- vaso -->
+            <path d="M10 30 L13 48 H31 L34 30 Z" opacity="0.9"/>
+            <!-- haste -->
+            <rect x="20.5" y="12" width="3" height="20" rx="1.5"/>
+            <!-- folha esquerda -->
+            <path d="M21 22 C18 18 12 18 12 14 C16 14 20 17 21 22Z" opacity="0.85"/>
+            <!-- folha direita -->
+            <path d="M23 18 C26 14 32 13 32 9 C28 10 23 13 23 18Z" opacity="0.85"/>
+            <!-- brotar topo -->
+            <path d="M22 12 C21 9 19 7 20 4 C22 6 23 9 22 12Z"/>
+          </svg>
+
+          <!-- Wordmark -->
+          <div class="leading-none">
+            <div
+              class="font-black uppercase tracking-widest text-lg transition-colors duration-300"
+              :class="scrolled ? 'text-[#1C3A0E]' : 'text-white'"
+              style="font-family: 'Inter', sans-serif; letter-spacing: 0.12em;"
+            >
+              PURE <span :class="scrolled ? 'text-[#2D6A4F]' : 'text-[#A7F3D0]'">GARDEN</span>
+            </div>
+            <div
+              class="text-[9px] tracking-[0.25em] uppercase font-medium transition-colors duration-300"
+              :class="scrolled ? 'text-[#2D6A4F]' : 'text-[#A7F3D0]/80'"
+            >Jardins e Decorações</div>
           </div>
-          <span
-            class="font-semibold text-lg tracking-tight transition-colors duration-300"
-            :class="scrolled ? 'text-[#1B1B1B]' : 'text-white'"
-            style="font-family: 'Playfair Display', serif"
-          >Verde Vivo</span>
         </RouterLink>
 
         <!-- Desktop Nav -->
